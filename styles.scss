@@ -1,0 +1,231 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+
+body {
+    background-color: white;
+}
+
+header {
+    @include grid-row();
+    text-align: center;
+
+    .list {
+        @include grid-column(4);
+        font-size: .7em;
+    }
+
+    h2 {
+        @include grid-column(4);
+        font-size: 2.1em;
+        margin: 0px;
+    }
+
+    .sign {
+        @include grid-column(4);
+
+        .signin, .cart {
+        display: inline;
+        padding-right: 4px;
+        font-size: .7em;
+        width: 50%;
+        }
+    }
+
+}
+
+nav {
+    @include grid-row();
+    text-align: center;
+    width: 60%;
+
+    ul {
+        @include grid-column(12);
+        display: inline-block;
+        list-style-type: none;
+
+        li {
+            @include grid-column(3);
+            font-size: .85em;
+            color: tan; 
+        }
+
+        #products {
+            color: black;
+        }
+    }
+}
+
+main {
+    @include grid-row();
+    color: white;
+    text-align: center;
+
+    .black-ice {
+        @include grid-column(12);
+        background-color: black;
+
+        h4 {
+            margin-top: 120px;
+            margin-bottom: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            margin: 5px;
+            font-size: 3em;
+        }
+
+        h3 {
+            margin: 5px;
+            font-size: 1.3em;
+        }
+
+        .release {
+            margin-top: 40px;
+            margin-bottom: 120px;
+            font-size: .7em;
+        }
+        
+    }
+
+    .lunacy {
+        @include grid-column(8);
+        background-color: darkgray;
+
+       .fall {
+           margin-top: 70px;
+           margin-bottom: 0px;
+       } 
+
+       h3 {
+           margin: 5px;
+           font-size: 1.3em;
+       }
+
+       p {
+           margin: 5px;
+           font-size: .8em;
+       }
+
+       .check {
+           margin-top: 5px;
+           margin-bottom: 70px;
+       }
+    }
+
+    .schedule {
+        @include grid-column(4);
+        background-color: indianred;
+
+        .events {
+            margin-top: 70px;
+            margin-bottom: 0px;
+            font-size: .8em;
+        }
+
+        .midwest {
+            margin: 5px;
+            font-size: 1em;
+        }
+
+        .check {
+            margin-top: 5px;
+            margin-bottom: 77px;
+            font-size: .8em;
+        }
+    }
+
+    .merchandise {
+        @include grid-column(12);
+        color: black;
+
+        h2 {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 2em;
+        }
+
+        p {
+            display: block;
+            margin-top: 0px;
+            color: tan;
+
+        }
+    }
+
+    .row1 {
+        color: black;
+        font-size: .9em;
+
+        .price {
+            color: indianred;
+        }
+    }
+
+    .graph, .ruled, .plain, .mixed {
+        @include grid-column(3);
+    }
+
+    .row2 {
+        color: black;
+        font-size: .9em;
+
+        .price {
+            color: indianred;
+        }
+
+    }
+
+    .ice, .companion, .front, .lun {
+        @include grid-column(3);
+    }
+       
+}
+
+footer {
+    @include grid-row();
+    background-color: tan;
+    color: black;
+    text-align: center;
+
+    p {
+        @include grid-column(4);
+        font-size: .9em;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    h2 {
+        @include grid-column(4);
+        font-size: 2.1em;
+    }
+
+    .lists {
+        @include grid-column(4);
+        font-size: .7em;
+
+        ul {
+            list-style-type: none;
+        }
+
+        .one {
+            display: inline-block;
+        }
+
+        .two {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+    }
+
+    .quote {
+        @include grid-column(4);
+        font-size: .9em;
+    }
+
+
+}
